@@ -5,129 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>College of Engineering Perumon</title>
   <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #fdfdfd;
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
     }
 
- header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  border-bottom: 2px solid #ddd;
-  background-color: #fff;
-}
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 2px solid #ddd;
+      background-color: #fff;
+    }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex: 1 1 60%;
+    }
 
-.logo-img {
-  height: 70px;
-}
+    .logo-img {
+      height: 70px;
+    }
 
-.text h3 {
-  margin: 0;
-  font-size: 20px;
-}
+    .text h3 {
+      margin: 0;
+      font-size: 20px;
+    }
 
-.text small {
-  font-size: 12px;
-  color: #555;
-}
+    .text small {
+      font-size: 12px;
+      color: #555;
+    }
 
-.highlight {
-  color: red;
-}
+    .highlight {
+      color: red;
+    }
 
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: flex-end;
+      flex: 1 1 30%;
+    }
 
-.nba-logo {
-  height: 70px;
-}
+    .nba-logo {
+      height: 70px;
+    }
+
     .image {
       padding-top: 15px;
       display: block;
       margin: 0 auto;
-      width: 50%;
-      max-height: 400px;
+      width: 90%;
+      max-width: 600px;
       border-radius: 10px;
-     
     }
 
-    .about {
-      margin: 50px;
+    .about, .departments, .vision, .mission, .form {
+      margin: 5% 5%;
     }
 
-    .about h2 {
-      margin-bottom: 10px;
+    .about h2, .departments h2 {
       border-bottom: 2px solid #0073e6;
       padding-bottom: 8px;
       color: #004080;
     }
 
-    .about p {
-      margin: 20px 0;
+    .about p, .vision p, .mission ul, .departments ul {
       font-size: 16px;
       line-height: 1.6;
       text-align: justify;
     }
 
-    .departments {
-      margin: 50px;
-    }
-
-    .departments h2 {
-      margin-bottom: 15px;
-      color: #004080;
-      border-bottom: 2px solid #0073e6;
-      padding-bottom: 5px;
-    }
-
     .departments ul {
       margin-left: 30px;
-      font-size: 16px;
       cursor: pointer;
     }
 
     .departments li {
       margin-bottom: 8px;
-      transition: transform 0.2s;
-    }
-
-
-    .highlight {
-      color: #0073e6;
-      font-weight: bold;
     }
 
     .vision, .mission {
-      margin: 50px;
       padding: 25px;
       border: 2px solid #0073e6;
       border-radius: 10px;
       background-color: #f0f8ff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-     
     }
 
     .vision h3, .mission h3 {
       margin-top: 0;
       color: #004080;
       font-size: 20px;
-    }
-
-    .vision p, .mission ul {
-      font-size: 16px;
-      color: #08052b;
     }
 
     .mission ul {
@@ -137,37 +113,38 @@ body {
     .mission li {
       margin-bottom: 10px;
     }
-    .footer{
+
+    .footer {
       display: flex;
-      align-items: space-between;
+      flex-wrap: wrap;
       gap: 40px;
       border-top: 1px solid #23486d;
-      margin: 40px;
-      box-shadow:#e00101;
-      font-family:Cabin,sans-serif
+      margin: 40px 5%;
     }
+
     .footer-section {
-    flex: 1;
-    min-width: 250px;
-    color: #024486;
+      flex: 1;
+      min-width: 250px;
+      color: #024486;
     }
 
     .footer h3 {
       color: #054155;
       margin-bottom: 10px;
     }
-    .form{
-      
+
+    .form {
       margin: auto;
       text-align: center;
-      width: 40%;
-      max-width: 100%;
+      width: 100%;
+      max-width: 500px;
     }
-    .form h2{
+
+    .form h2 {
       font-size: 1.9rem;
       color: #024486;
     }
-    
+
     .field {
       display: flex;
       flex-direction: column;
@@ -180,7 +157,6 @@ body {
       border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 15px;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     .field textarea {
@@ -188,7 +164,7 @@ body {
     }
 
     .field button {
-      background-color:#024486;
+      background-color: #024486;
       color: white;
       padding: 10px;
       border: none;
@@ -197,27 +173,49 @@ body {
       border-radius: 5px;
       cursor: pointer;
       font-size: 16px;
-      border-color:#024486 ;
-      
     }
-    .field button:hover{
+
+    .field button:hover {
       color: #081c32;
-      background-color: rgb(255, 255, 255);
-     
+      background-color: white;
     }
-    .imagefooter{
+
+    .imagefooter {
       background-color: #024486;
-      max-height: 100%;
-      max-width: 100%;
+      text-align: center;
     }
-    .imagefooter h3{
-      padding-top: 30px;
+
+    .imagefooter h3 {
+      padding: 30px 5px;
       background-color: #024486;
       color: #ccc;
       font-weight: 300;
-      margin: auto;
-      padding-left: 5px;
       font-size: 15px;
+    }
+
+    .imagefooter img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-left, .header-right {
+        flex: 1 1 100%;
+        justify-content: center;
+      }
+      .image {
+        width: 90%;
+      }
+      .form {
+        width: 90%;
+      }
+      .footer {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
