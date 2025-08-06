@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fdfdfd;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      border-bottom: 2px solid #ddd;
+      background-color: #fff;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-img {
+      height: 70px;
+    }
+
+    .nba-logo {
+      height: 60px;
+      border-radius: 6px;
+    }
+
+    .home a {
+      background-color: #024486;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: background-color 0.3s ease;
+    }
+
+    .home a:hover {
+      background-color: #0366d6;
+    }
+
+    .text h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #004080;
+    }
+
+    .text small {
+      font-size: 12px;
+      color: #555;
+    }
+
+    .highlight {
+      color: red;
+    }
+
+    .login-container {
+      margin: 5% 5%;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #004080;
+      border-bottom: 2px solid #0073e6;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #004080;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    .gender-options label {
+      font-weight: normal;
+      color: #004080;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .checkbox-container label {
+      margin-left: 8px;
+      font-weight: normal;
+      color: #004080;
+    }
+
+    .submit-btn {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #0073e6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUlB_ininwLOuQ9P0wi67Zk68Qcb2AblIe2A&s" alt="CAPE logo" class="logo-img">
+      <div class="text">
+        <h3><strong>COLLEGE OF ENGINEERING PERUMON</strong></h3>
+        <small>
+          Under the Co-operative Academy of Professional Education (CAPE)<br>
+          Established by <span class="highlight">Govt. of Kerala</span>
+        </small>
+      </div>
+    </div>
+    <div class="header-right">
+      <img src="https://assets.thehansindia.com/h-upload/feeds/2019/05/02/170588-nba.jpg" alt="NBA Logo" class="nba-logo">
+      <div class="home">
+        <a href="index.html">HOME</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <label for="name">Name of the Student</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label>Gender</label>
+      <div class="gender-options" >
+        <label><input type="radio" name="gender" value="male" required> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+      </div>
+
+      <label for="department">Department</label>
+      <select id="department" name="department" required>
+        <option value="" disabled selected>Select your department</option>
+        <option value="cse">Computer Science Engineering</option>
+        <option value="ece">Electronics and Communication</option>
+        <option value="eee">Electrical and Electronics</option>
+        <option value="mech">Mechanical Engineering</option>
+        <option value="civil">Civil Engineering</option>
+      </select>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="condition" name="condition" required>
+        <label for="condition">I agree to the terms and conditions</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+  </div>
+</body>
+</html>

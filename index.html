@@ -46,18 +46,41 @@
       color: red;
     }
 
-    .header-right {
+     .header-right {
       display: flex;
-      align-items: center;
-      gap: 15px;
       justify-content: flex-end;
-      flex: 1 1 30%;
+      align-items: center;
+      gap: 20px;
+      padding: 10px 20px;
+      
     }
 
     .nba-logo {
       height: 70px;
+      border-radius: 6px;
     }
 
+    .login a {
+      background-color: #024486;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      justify-content: space-between;
+      transition: background-color 0.3s ease;
+    }
+
+    .login a:hover {
+      background-color: #1560b6;
+    }
+
+    .principle {
+      padding-top: 50px;
+      text-decoration: none;
+      height: 20px;
+      color: #004080;
+    }
     .image {
       padding-top: 15px;
       display: block;
@@ -234,9 +257,12 @@
   </div>
   <div class="header-right">
     <img src="https://assets.thehansindia.com/h-upload/feeds/2019/05/02/170588-nba.jpg" alt="NBA Logo" class="nba-logo">
+     <div class="login">
+        <a href="login.html" >Login</a>
+         <a href="https://cep.etlab.in/user/login" target="_blank">Etlab Login</a>
+      </div>
     </div>
   </header>
-
  
   <div>
     <img class="image" src="https://www.perumonec.ac.in/assets/img/dept/cse.png" alt="college_img">
@@ -253,7 +279,7 @@
   <div class="departments">
     <h2>Departments</h2>
     <ul>
-        <li>Computer Science Engineerings <span class="highlight">(NBA Accredited)</span></li>
+        <li>Computer Science Engineering <span class="highlight">(NBA Accredited)</span></li>
         <li>Electronics & Communication Engineering<span class="highlight">(NBA Accredited)</span></li>
         <li>Mechanical Engineering<span class="highlight">(NBA Accredited)</span></li>
         <li>Electrical & Electronics Engineering<span class="highlight">(NBA Accredited)</span></li>
