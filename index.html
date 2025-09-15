@@ -301,12 +301,13 @@
 
   <div class="form">
     <h2>Contact Us</h2>
+    
     <div>
-    <form class="field">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Submit</button>
+    <form class="field" action="index.php" method="POST">
+      <input type="text" name ="name"placeholder="Your Name" required>
+      <input type="email" name="mail" placeholder="Your Email" required>
+      <textarea name="msg" placeholder="Your Message" required></textarea>
+      <button name="submit"type="submit">Submit</button>
     </form></div>
   </div>
 </body>
