@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Add student</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -211,14 +211,14 @@
     <div class="header-right">
       <img src="https://assets.thehansindia.com/h-upload/feeds/2019/05/02/170588-nba.jpg" alt="NBA Logo" class="nba-logo">
       <div class="home">
-        <a href="index.html">HOME</a>
+        <a href="homepage.html">HOME</a>
       </div>
     </div>
   </header>
 
   <div class="login-container">
-    <h2>Login</h2>
-    <form>
+    <h2>Add student</h2>
+    <form action="login_students.php" method ='POST'>
       <label for="name">Name of the Student</label>
       <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -241,16 +241,16 @@
         <option value="ece">Electronics and Communication</option>
         <option value="eee">Electrical and Electronics</option>
         <option value="mech">Mechanical Engineering</option>
-        <option value="civil">Civil Engineering</option>
+        <option value="civil">AI and DS</option>
+        <option value="civil">Electronics and Computer Science</option>
       </select>
 
       <div class="checkbox-container">
-        <input type="checkbox" id="condition" name="condition" required>
+        <input type="checkbox" id="condition" name="condition"  value="1" required>
         <label for="condition">I agree to the terms and conditions</label>
       </div>
-
-      <button type="submit" class="submit-btn">Login</button>
-    </form>
+    <button type="submit" class="submit-btn">Add student</button>
+     </form>
   </div>
 </body>
 </html>
