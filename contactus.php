@@ -62,7 +62,7 @@ echo "<div style='
     color: #555;
 '>".$message."</div>";
 echo "</div>";
-echo"<a href='homepage.html' style='color:white;display:inline-block;text-decoration:none;background-color:#024486 ;padding:9px 10px;border-radius: 5px;transition: background-color 0.3s;'>Go to Home</a>";
+echo"<a href='students.html' style='color:white;display:inline-block;text-decoration:none;background-color:#024486 ;padding:9px 10px;border-radius: 5px;transition: background-color 0.3s;'>Go to Home</a>";
 
 }
 else {

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students Dashboard</title>
+  <style>
+    
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: white;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      color: #333;
+    }
+    header {
+      background-color: #ffffff;
+      width: 100%;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      flex-wrap: wrap;
+    }
+
+    .header-left,
+    .header-right {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-img {
+      height: 70px;
+      margin-right: 15px;
+      border-radius: 6px;
+    }
+
+    .nba-logo {
+      height: 60px;
+      margin-left: 15px;
+      border-radius: 6px;
+    }
+
+    .text {
+      line-height: 1.3;
+    }
+
+    .text h3 {
+      font-size: 18px;
+      color: #024486;
+      margin: 0;
+      text-align: left;
+    }
+
+    .text small {
+      color: #444;
+      font-size: 12px;
+    }
+
+    .text .highlight {
+      color: #024486;
+      font-weight: 600;
+    }
+
+    .home a {
+      background-color: #024b8b;
+      color: white;
+      text-decoration: none;
+      padding: 10px 16px;
+      margin-right:10px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    .home a:hover {
+      background-color: #0237a0;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    }
+
+   
+    .container {
+      background: white;
+      text-align: center;
+      padding: 40px 60px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      width: 340px;
+      margin-top: 60px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin-bottom: 25px;
+      color: #024486;
+      font-size: 26px;
+      letter-spacing: 0.5px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      margin: 12px 0;
+      padding: 12px;
+      background-color: #024b8b;
+      color: white;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    a:hover {
+      background-color: #0237a0;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #777;
+    }
+
+  
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .logo-img, .nba-logo {
+        height: 60px;
+        margin: 10px;
+      }
+
+      .text h3 {
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .text small {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .home {
+        margin-top: 10px;
+      }
+
+      .container {
+        width: 85%;
+        padding: 30px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUlB_ininwLOuQ9P0wi67Zk68Qcb2AblIe2A&s" alt="CAPE logo" class="logo-img">
+      <div class="text">
+        <h3><strong>COLLEGE OF ENGINEERING PERUMON</strong></h3>
+        <small>
+          Under the Co-operative Academy of Professional Education (CAPE)<br>
+          Established by <span class="highlight">Govt. of Kerala</span>
+        </small>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <img src="https://assets.thehansindia.com/h-upload/feeds/2019/05/02/170588-nba.jpg" alt="NBA Logo" class="nba-logo">
+      <div class="home">
+        <a href="homepage.html">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Student Management</h1>
+
+    <a href="add_students.html">Add Student</a>
+    <a href="update_student.php">Update Student</a>
+    <a href="delete_student.php">Delete Student</a>
+    <a href="view_students.php" target="_blank">View Students</a>
+
+    <footer>College of Engineering Perumon</footer>
+  </div>
+</body>
+</html>

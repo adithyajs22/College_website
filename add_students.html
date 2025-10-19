@@ -99,6 +99,8 @@
     input[type="text"],
     input[type="email"],
     input[type="date"],
+    input[type="year"],
+    input[type="number"],
     select {
       width: 100%;
       padding: 10px;
@@ -107,18 +109,6 @@
       margin-top: 5px;
       box-sizing: border-box;
     }
-
-    .gender-options {
-      display: flex;
-      gap: 15px;
-      margin-top: 10px;
-    }
-
-    .gender-options label {
-      font-weight: normal;
-      color: #004080;
-    }
-
     input[type="radio"] {
       margin-right: 5px;
     }
@@ -211,14 +201,14 @@
     <div class="header-right">
       <img src="https://assets.thehansindia.com/h-upload/feeds/2019/05/02/170588-nba.jpg" alt="NBA Logo" class="nba-logo">
       <div class="home">
-        <a href="homepage.html">HOME</a>
+        <a href="students.html">Manage Students</a>
       </div>
     </div>
   </header>
 
   <div class="login-container">
     <h2>Add student</h2>
-    <form action="login_students.php" method ='POST'>
+    <form action="add_students.php" method ='POST'>
       <label for="name">Name of the Student</label>
       <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -228,11 +218,18 @@
       <label for="dob">Date of Birth</label>
       <input type="date" id="dob" name="dob" required>
 
-      <label>Gender</label>
-      <div class="gender-options" >
-        <label><input type="radio" name="gender" value="male" required> Male</label>
-        <label><input type="radio" name="gender" value="female"> Female</label>
-      </div>
+      <label for="Regno">Register Number</label>
+      <input type="number" name="Regno" placeholder="Enter your register number"> 
+       <label for="year">Year</label>
+      <select id="year" name="year" required>
+        <option value="" disabled selected>Select your Academic Year</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        
+      </select>
+      
 
       <label for="department">Department</label>
       <select id="department" name="department" required>
